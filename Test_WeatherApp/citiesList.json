@@ -1,0 +1,52 @@
+[
+ {
+    "name" : "Irkutsk",
+    "lat" : 52.2855,
+    "lon" : 104.2890
+ },
+ {
+    "name" : "Ulan-Ude",
+    "lat" : 51.8336,
+    "lon" : 107.5840
+ },
+ {
+    "name" : "Chita",
+    "lat" : 52.0515,
+    "lon" : 113.4712
+ },
+ {
+    "name" : "Moscow",
+    "lat" : 55.7558,
+    "lon" : 37.6173
+ },
+ {
+    "name" : "Omsk",
+    "lat" : 54.9914,
+    "lon" : 73.3645
+ },
+ {
+    "name" : "Novosibirsk",
+    "lat" : 54.9833,
+    "lon" : 82.8964
+ },
+ {
+    "name" : "Krasnoyarsk",
+    "lat" : 56.0153,
+    "lon" : 92.8932
+ },
+ {
+    "name" : "Kemerovo",
+    "lat" : 55.3443,
+    "lon" : 86.0621
+ },
+ {
+    "name" : "Aginskoe",
+    "lat" : 51.1033,
+    "lon" : 114.5427
+ },
+ {
+    "name" : "Khabarovsk",
+    "lat" : 48.4814,
+    "lon" : 135.0721
+ }
+]
