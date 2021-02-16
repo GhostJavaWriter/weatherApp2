@@ -141,7 +141,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //add logic go to detail view
         let currentCity: CityObject
         
         if isFiltering {
