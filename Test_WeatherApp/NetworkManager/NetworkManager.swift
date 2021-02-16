@@ -19,8 +19,6 @@ class NetworkManager {
             
             guard let data = data, error == nil else { return }
             
-            
-            
             if let image = UIImage(data: data) {
                 complition(image)
             } else {
@@ -79,6 +77,4 @@ class NetworkManager {
             print("list of cities load fail")
         }
     }
-    
-    
 }

@@ -31,7 +31,7 @@ class DetailViewController : UIViewController {
         weatherDescrLabel.text = currentCity.condition
         
         if let temp = currentCity.temp {
-            temperatureLabel.text = "\(temp)"
+            temperatureLabel.text = "\(temp)°"
         } else {
             temperatureLabel.text = "--"
         }

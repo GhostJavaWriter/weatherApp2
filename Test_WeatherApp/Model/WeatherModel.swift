@@ -9,7 +9,7 @@ import Foundation
 
 class WeatherModel: Codable {
     
-    var temp : Double?
+    var temp : Int?
     var condition : String?
     var icon : String?
 }

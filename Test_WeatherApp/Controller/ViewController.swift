@@ -125,11 +125,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                     if let temp = model?.fact?.temp,
                        let condition = model?.fact?.condition {
                         DispatchQueue.main.async {
-                            cell?.detailTextLabel?.text = "\(temp)°C \(condition)"
+                            cell?.detailTextLabel?.text = "\(temp)° \(condition)"
                         }
                     } else {
                         DispatchQueue.main.async {
-                            cell?.detailTextLabel?.text = "--°C"
+                            cell?.detailTextLabel?.text = "--°"
                         }
                     }
                 })
