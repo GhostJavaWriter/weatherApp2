@@ -150,7 +150,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             vc.city = currentCity
-            
             navigationController?.pushViewController(vc, animated: true)
         }
     }
