@@ -38,20 +38,21 @@ class ViewController: UIViewController, UISearchResultsUpdating {
         tableView.dataSource = self
         
         DispatchQueue.global().async {
-            NetworkManager.shared.getCities(fileName: "citiesList", result: { (model) in
+            NetworkManager.shared.getCities(fileName: "citiesList", result: { [weak self] (model) in
                 if let cities = model {
-                    self.cities = cities
+                    self?.cities = cities
                     
                     DispatchQueue.main.async {
-                        self.tableView.reloadData()
+                        self?.tableView.reloadData()
                     }
                     
                     for city in cities {
                         if let lat = city.lat,
                            let lon = city.lon {
-                            NetworkManager.shared.getWeather(lat: lat, lon: lon) { (model) in
-                                city.condition = model?.fact?.condition
-                                city.icon = model?.fact?.icon
+                            NetworkManager.shared.getWeather(lat: lat, lon: lon) { [weak city] (model) in
+                                city?.condition = model?.fact?.condition
+                                city?.icon = model?.fact?.icon
+                                city?.temp = model?.fact?.temp
                             }
                         }
                     }
@@ -120,15 +121,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
            let lon = currentCity.lon {
             
             DispatchQueue.global().async {
-                NetworkManager.shared.getWeather(lat: lat, lon: lon, result: { (model) in
+                NetworkManager.shared.getWeather(lat: lat, lon: lon, result: { [weak cell] (model) in
                     if let temp = model?.fact?.temp,
                        let condition = model?.fact?.condition {
                         DispatchQueue.main.async {
-                            cell.detailTextLabel?.text = "\(temp)°C \(condition)"
+                            cell?.detailTextLabel?.text = "\(temp)°C \(condition)"
                         }
                     } else {
                         DispatchQueue.main.async {
-                            cell.detailTextLabel?.text = "--°C"
+                            cell?.detailTextLabel?.text = "--°C"
                         }
                     }
                 })

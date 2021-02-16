@@ -12,7 +12,7 @@ class CityObject : Codable {
     var name : String?
     var lat : Double?
     var lon : Double?
-    var temp : Int?
+    var temp : Double?
     var condition : String?
     var icon : String?
     

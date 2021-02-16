@@ -30,6 +30,12 @@ class DetailViewController : UIViewController {
         cityNameLabel.text = currentCity.name
         weatherDescrLabel.text = currentCity.condition
         
+        if let temp = currentCity.temp {
+            temperatureLabel.text = "\(temp)"
+        } else {
+            temperatureLabel.text = "--"
+        }
+        
         if let urlString = currentCity.icon {
             let url = "https://yastatic.net/weather/i/icons/blueye/color/svg/\(urlString).svg"
             if let imageURL = URL(string: url) {
