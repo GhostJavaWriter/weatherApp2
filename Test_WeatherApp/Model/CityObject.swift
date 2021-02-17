@@ -15,5 +15,5 @@ class CityObject : Codable {
     var temp : Int?
     var condition : String?
     var icon : String?
-    var forecasts : [DayModel]?
+    var forecasts : [ForecastsModel]?
 }

@@ -9,6 +9,5 @@ import Foundation
 
 class DayModel : Codable {
     
-    var date : String?
-    var temp : Int?
+    var temp_avg : Int?
 }

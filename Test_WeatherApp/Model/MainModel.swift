@@ -10,5 +10,5 @@ import Foundation
 class MainModel: Codable {
     
     var fact : WeatherModel?
-    var forecasts : [DayModel]?
+    var forecasts : [ForecastsModel]?
 }

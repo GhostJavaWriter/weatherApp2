@@ -21,6 +21,8 @@
 		8804581025D40E1A006397F2 /* CityObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804580F25D40E1A006397F2 /* CityObject.swift */; };
 		8804583B25D8935A006397F2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804583A25D8935A006397F2 /* DetailViewController.swift */; };
 		8804583F25DBF6EF006397F2 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804583E25DBF6EF006397F2 /* DayModel.swift */; };
+		8804584225DD4846006397F2 /* ForecastsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804584125DD4846006397F2 /* ForecastsModel.swift */; };
+		8804584525DD49C2006397F2 /* PartsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804584425DD49C2006397F2 /* PartsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		8804580F25D40E1A006397F2 /* CityObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityObject.swift; sourceTree = "<group>"; };
 		8804583A25D8935A006397F2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8804583E25DBF6EF006397F2 /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
+		8804584125DD4846006397F2 /* ForecastsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastsModel.swift; sourceTree = "<group>"; };
+		8804584425DD49C2006397F2 /* PartsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 			children = (
 				880457FF25D2AC77006397F2 /* CityModel.swift */,
 				8804580F25D40E1A006397F2 /* CityObject.swift */,
+				8804584125DD4846006397F2 /* ForecastsModel.swift */,
+				8804584425DD49C2006397F2 /* PartsModel.swift */,
 				8804580725D2B183006397F2 /* WeatherModel.swift */,
 				8804580425D2B12B006397F2 /* MainModel.swift */,
 				8804583E25DBF6EF006397F2 /* DayModel.swift */,
@@ -191,10 +197,12 @@
 				880457FD25D2AB42006397F2 /* NetworkManager.swift in Sources */,
 				8804580525D2B12B006397F2 /* MainModel.swift in Sources */,
 				8804581025D40E1A006397F2 /* CityObject.swift in Sources */,
+				8804584225DD4846006397F2 /* ForecastsModel.swift in Sources */,
 				8804580825D2B183006397F2 /* WeatherModel.swift in Sources */,
 				8804583F25DBF6EF006397F2 /* DayModel.swift in Sources */,
 				880457EC25D2A6EE006397F2 /* ViewController.swift in Sources */,
 				880457E825D2A6EE006397F2 /* AppDelegate.swift in Sources */,
+				8804584525DD49C2006397F2 /* PartsModel.swift in Sources */,
 				880457EA25D2A6EE006397F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

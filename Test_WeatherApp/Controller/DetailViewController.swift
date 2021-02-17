@@ -16,7 +16,7 @@ class DetailViewController : UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var tableView: UITableView!
     
     var city : CityObject?
-    fileprivate var forecastsWeather : [DayModel]?
+    fileprivate var forecastsWeather : [ForecastsModel]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,8 +80,13 @@ class DetailViewController : UIViewController, UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "Day", for: indexPath)
         
         if let forecastsWeather = forecastsWeather {
-            cell.textLabel?.text = forecastsWeather[indexPath.row].date
-            cell.detailTextLabel?.text = "\(forecastsWeather[indexPath.row].temp)"
+            cell.detailTextLabel?.text = forecastsWeather[indexPath.row].date
+            if let temp = forecastsWeather[indexPath.row].parts?.day?.temp_avg {
+                cell.textLabel?.text = "\(temp)°"
+            } else {
+                cell.textLabel?.text = "--°"
+            }
+            
         } else {
             print("forecast object is nil")
         }
