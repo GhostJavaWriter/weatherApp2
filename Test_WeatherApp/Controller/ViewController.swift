@@ -53,6 +53,7 @@ class ViewController: UIViewController, UISearchResultsUpdating {
                                 city?.condition = model?.fact?.condition
                                 city?.icon = model?.fact?.icon
                                 city?.temp = model?.fact?.temp
+                                city?.forecasts = model?.forecasts
                             }
                         }
                     }

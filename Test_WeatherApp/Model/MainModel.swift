@@ -9,6 +9,6 @@ import Foundation
 
 class MainModel: Codable {
     
-    //var info : CityModel?
     var fact : WeatherModel?
+    var forecasts : [DayModel]?
 }

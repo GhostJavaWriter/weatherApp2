@@ -35,7 +35,8 @@ class NetworkManager {
         urlComponents.path = "/v2/forecast"
         urlComponents.queryItems = [URLQueryItem(name: "lat", value: "\(lat)"),
                                     URLQueryItem(name: "lon", value: "\(lon)"),
-                                    URLQueryItem(name: "lang", value: "ru_RU")]
+                                    URLQueryItem(name: "lang", value: "ru_RU"),
+                                    URLQueryItem(name: "limit", value: "6")]
         
         guard let url = urlComponents.url else { return print("url error")}
         var request = URLRequest(url: url)
